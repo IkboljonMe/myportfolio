@@ -17,19 +17,15 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
+              <p>Working with HTML+CSS </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
               <p>Working with JavaScript </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Working React.js+Next.js</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Working with Tailwind, Boostrap, MUI</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Working with advanced styling</p>
+              <p>Working React.js </p>
             </li>
           </ul>
         </article>
@@ -44,10 +40,7 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-                Creating WebSites(HTML+CSS/JavaScript/React/Nextjs/Webpack +
-                FireBase)
-              </p>
+              <p>Creating WebSites(HTML+CSS/JavaScript/React + FireBase) </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
@@ -55,11 +48,11 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>React/Next Applications</p>
+              <p>React Applications</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Git + Gitub/GitLab </p>
+              <p>Git + GitLab </p>
             </li>
           </ul>
         </article>
