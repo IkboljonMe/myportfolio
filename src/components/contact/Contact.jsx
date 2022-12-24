@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import { MdOutlineEmail } from "react-icons/md";
-import { RiMessengerLine } from "react-icons/ri";
+import { FaTelegram } from "react-icons/fa";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 
@@ -12,10 +12,10 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_c2jj3s6",
-      "template_ymsy0wr",
+      "service_h76c9ko",
+      "template_s8du4tk",
       form.current,
-      "tUfLcHURtAIXUh5ac"
+      "Y4cwkbCzUkl-vOlWP"
     );
     e.target.reset();
   };
@@ -29,14 +29,14 @@ const Contact = () => {
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
-            <h5>shokirovbotirjon2003@gmail.com</h5>
-            <a href="mailto:shokirovbotirjon2003@gmail.com">Send a message</a>
+            <h5>ikboljonme@gmail.com</h5>
+            <a href="mailto:ikboljonme@gmail.com">Send a message</a>
           </article>
           <article className="contact__option">
-            <RiMessengerLine className="contact__option-icon" />
+            <FaTelegram className="contact__option-icon" />
             <h4>Telegram</h4>
-            <h5>https://t.me/Shokirov_Botirjon</h5>
-            <a href="https://t.me/Shokirov_Botirjon">Send a message</a>
+            <h5>https://t.me/Iqboljon_Abdurasulov</h5>
+            <a href="https://t.me/iqboljon_abdurasulov">Send a message</a>
           </article>
         </div>
         {/* END OF CONTACT OPTION */}

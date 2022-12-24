@@ -4,12 +4,13 @@ import "./Footer.css";
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
+import { IoLogoTwitter } from "react-icons/io";
 
 const Footer = () => {
   return (
     <footer>
       <a href="#home" className="footer__logo">
-        Botirjon Shokiorv
+        Ikboljon Abdurasulov
       </a>
 
       <ul className="permalinks">
@@ -37,24 +38,22 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://www.facebook.com/botirjonshokir/">
+        <a href="https://www.facebook.com/ikboljonme">
           <FaFacebookF />
         </a>
-        <a href="https://www.instagram.com/_botirjonshokirov_/">
+        <a href="https://www.instagram.com/___.coder.___">
           <FiInstagram />
         </a>
-<<<<<<< changing-the-content
-        <a href="https://github.com/botirjonshokirov">
+        <a href="https://github.com/IkboljonMe">
           <FiGithub />
-=======
-        <a href="https://twitter.com/BotirjonShokir2">
+        </a>
+        <a href="https://twitter.com/ikboljonme">
           <IoLogoTwitter />
->>>>>>> main
         </a>
       </div>
 
       <div className="footer__copyright">
-        <small>&copy; Botirjon Shokirov. All rights reserved.</small>
+        <small>&copy; Ikboljon Abdurasulov. All rights reserved.</small>
       </div>
     </footer>
   );
