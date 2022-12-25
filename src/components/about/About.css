@@ -63,6 +63,9 @@
   font-size: 0.7rem;
   color: var(--color-light);
 }
+.about__card .smallDiv {
+  padding-top: 5px;
+}
 
 .about__content p {
   margin: 2rem 0 2.6rem;
