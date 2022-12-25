@@ -39,6 +39,9 @@
   margin-top: 6px;
   color: var(--color-primary);
 }
+.movingTextWrapper {
+  padding-top: 3px;
+}
 
 /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================ */
 @media screen and (max-width: 1024px) {
