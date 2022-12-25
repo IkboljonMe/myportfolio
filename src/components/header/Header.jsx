@@ -8,7 +8,21 @@ const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <h5>Hello I'm</h5>
+        <div class="wrapper ten">
+          <div>
+            <h3 class="bounce">
+              <span>H</span>
+              <span>e</span>
+              <span>l</span>
+              <span>l</span>
+              <span>o</span>
+              <span>&nbsp;</span>
+              <span>I</span>
+              <span>'</span>
+              <span>m</span>
+            </h3>
+          </div>
+        </div>
         <div class="drop-main">
           <div class="nI">I</div>
           <div class="nK">k</div>
@@ -31,7 +45,12 @@ const Header = () => {
           <div class="sO">o</div>
           <div class="sV">v</div>
         </div>
-        <h5 className="text-light">Fullstack Developer</h5>
+        <div class="wrapper four">
+          <div class="type">
+            <h5 class="typing">Fullstack Developer</h5>
+          </div>
+        </div>
+
         <CTA />
         <HeaderSocials />
         <div className="me">
