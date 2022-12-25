@@ -68,7 +68,6 @@ header {
   font-size: 25px !important;
   font-weight: bold;
   letter-spacing: 2px;
-  margin: 1.5rem;
   justify-content: center;
 }
 .nI {
@@ -184,7 +183,8 @@ header {
   color: var(--color-light);
   width: 20ch;
   border-right: 2px solid var(--color-light);
-  margin: 2rem auto;
+  margin: 0rem auto;
+  margin-top: 5px !important;
   white-space: nowrap;
   overflow: hidden;
   animation: typing 4s steps(13, end),

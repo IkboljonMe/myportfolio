@@ -1,15 +1,20 @@
 import React from "react";
+import { motion } from "framer-motion";
 import CV from "../../assets/cv.pdf";
 
 const CTA = () => {
   return (
     <div className="cta">
-      <a href={CV} download className="btn">
+      <motion.a whileHover={{ scale: 1.2 }} href={CV} download className="btn">
         Download CV
-      </a>
-      <a href="#contact" className="btn btn-primary">
+      </motion.a>
+      <motion.a
+        whileHover={{ scale: 1.2 }}
+        href="#contact"
+        className="btn btn-primary"
+      >
         Let's Talk
-      </a>
+      </motion.a>
     </div>
   );
 };
