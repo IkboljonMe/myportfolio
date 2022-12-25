@@ -17,15 +17,19 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Working with HTML+CSS </p>
+              <p>Working with animations</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Working with JavaScript </p>
+              <p>Working with advanced CSS/SASS </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Working React.js </p>
+              <p>Working with MUI/Tailwind </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Working with advanced styling </p>
             </li>
           </ul>
         </article>
@@ -40,19 +44,19 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Creating WebSites(HTML+CSS/JavaScript/React + FireBase) </p>
+              <p>Creating powerful Websites</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Team Work(Slack for Remote)</p>
+              <p>Team Work(remote)</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>React Applications</p>
+              <p>React/Nextjs/Typescript</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Git + GitLab </p>
+              <p>Git/Github/Gitlab </p>
             </li>
           </ul>
         </article>
