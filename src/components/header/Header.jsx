@@ -3,13 +3,27 @@ import "./Header.css";
 import CTA from "./CTA";
 import ME from "../../assets/me.png";
 import HeaderSocials from "./HeaderSocials";
-
+import { motion } from "framer-motion";
 const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <h5>Hello I'm</h5>
-        <div class="drop-main">
+        <motion.div whileHover={{ scale: 1.3 }} class="wrapper ten">
+          <div>
+            <h3 class="bounce">
+              <span>H</span>
+              <span>e</span>
+              <span>l</span>
+              <span>l</span>
+              <span>o</span>
+              <span>&nbsp;</span>
+              <span>I</span>
+              <span>'</span>
+              <span>m</span>
+            </h3>
+          </div>
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.1 }} class="drop-main">
           <div class="nI">I</div>
           <div class="nK">k</div>
           <div class="nB">b</div>
@@ -30,16 +44,25 @@ const Header = () => {
           <div class="sL">l</div>
           <div class="sO">o</div>
           <div class="sV">v</div>
-        </div>
-        <h5 className="text-light">Fullstack Developer</h5>
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.2 }} class="wrapper four">
+          <div class="type">
+            <h5 class="typing">Fullstack Developer</h5>
+          </div>
+        </motion.div>
+
         <CTA />
         <HeaderSocials />
         <div className="me">
-          <img src={ME} alt="me" />
+          <motion.img whileHover={{ scale: 1.1 }} src={ME} alt="me" />
         </div>
-        <a href="#contact" className="scroll__down">
+        <motion.a
+          whileHover={{ fontWeight: 500 }}
+          href="#contact"
+          className="scroll__down"
+        >
           Scroll Down
-        </a>
+        </motion.a>
       </div>
     </header>
   );

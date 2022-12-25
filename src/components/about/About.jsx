@@ -44,7 +44,7 @@ const About = () => {
             <article className="about__card">
               <IoIosPin className="about__icon" />
               <h5>Location</h5>
-              <small>Living in Warsaw(Poland)</small>
+              <small>Living in Warsaw</small>
             </article>
             <article className="about__card">
               <MdWork className="about__icon" />
@@ -58,7 +58,6 @@ const About = () => {
                 >
                   RadCode
                 </a>
-                &nbsp;(part-time)
               </small>
             </article>
           </div>
