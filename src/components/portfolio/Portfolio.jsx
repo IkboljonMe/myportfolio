@@ -1,18 +1,15 @@
 import React from "react";
 import "./Portfolio.css";
-import IMG1 from "../../assets/blogsite.png";
+import IMG1 from "../../assets/blog-site.png";
 import IMG2 from "../../assets/PortfolioImg.png";
-import IMG3 from "../../assets/furniture-commerce.png";
-import IMG4 from "../../assets/guess-number.png";
-import IMG5 from "../../assets/hamburger.png";
-import IMG6 from "../../assets/pig-game.png";
-import IMG7 from "../../assets/youtube-clone.png";
+import IMG3 from "../../assets/uzShop.png";
+import IMG4 from "../../assets/guessMyNumber.png";
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Simple Blog Site with HTML+CSS and JavaScript",
+    title: "Blog site with HTML,CSS and Js",
     github: "https://github.com/IkboljonMe/blog-site-main",
     demo: "https://blog-site-eight.vercel.app/",
   },
@@ -27,14 +24,14 @@ const data = [
   {
     id: 3,
     image: IMG3,
-    title: "Fully Responsive Furniture E-commerce shop with React",
+    title: "Responsive UzShop E-commerce shop with React",
     github: "https://github.com/IkboljonMe/commerce-project-web",
     demo: "https://commerce-project-web.vercel.app/",
   },
   {
     id: 4,
     image: IMG4,
-    title: "Simple Guess Number Game for FUN :)",
+    title: "Let's play guess game.Guess number between 0 to 20",
     github: "https://github.com/IkboljonMe/guess_number_js",
     demo: "https://guess-number-js.vercel.app/",
   },
