@@ -49,7 +49,7 @@ header {
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
 }
 
 /*  ===========   SCROLL DOWN  ============  */
@@ -61,6 +61,116 @@ header {
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
+}
+.drop-main {
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 1.5rem;
+  justify-content: center;
+}
+.nI {
+  opacity: 0;
+  animation: drop 0.4s linear forwards;
+}
+.nK {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.2s;
+}
+.nB {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.4s;
+}
+.nO1 {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.6s;
+}
+.nL {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.8s;
+}
+.nJ {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 1s;
+}
+.nO2 {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 1.2s;
+}
+.nN {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 1.4s;
+}
+.probel {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 1.6s;
+}
+.sA1 {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 1.8s;
+}
+.sB {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 2s;
+}
+.sD {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 2.2s;
+}
+.sU1 {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 2.4s;
+}
+.sR {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 2.6s;
+}
+.sA2 {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 2.8s;
+}
+.sS {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 3s;
+}
+.sU2 {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 3.2s;
+}
+.sL {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 3.4s;
+}
+.sO {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 3.6s;
+}
+.sV {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 3.8s;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  65% {
+    transform: translateY(-17px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-22px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 /*================= MEDIA QUERIES (MEDIUM DEVICES) ================*/
