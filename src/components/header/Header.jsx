@@ -9,7 +9,28 @@ const Header = () => {
     <header>
       <div className="container header__container">
         <h5>Hello I'm</h5>
-        <h1>Ikboljon Abdurasulov</h1>
+        <div class="drop-main">
+          <div class="nI">I</div>
+          <div class="nK">k</div>
+          <div class="nB">b</div>
+          <div class="nO1">o</div>
+          <div class="nL">l</div>
+          <div class="nJ">j</div>
+          <div class="nO2">o</div>
+          <div class="nN">n</div>
+          <div class="probel">&nbsp; </div>
+          <div class="sA1">A</div>
+          <div class="sB">b</div>
+          <div class="sD">d</div>
+          <div class="sU1">u</div>
+          <div class="sR">r</div>
+          <div class="sA2">a</div>
+          <div class="sS">s</div>
+          <div class="sU2">u</div>
+          <div class="sL">l</div>
+          <div class="sO">o</div>
+          <div class="sV">v</div>
+        </div>
         <h5 className="text-light">Fullstack Developer</h5>
         <CTA />
         <HeaderSocials />
