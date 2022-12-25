@@ -1,7 +1,7 @@
 import React from "react";
 import "./Testimonials.css";
 
-import AVTR1 from "../../assets/avatar1.jpg";
+import AVTR1 from "../../assets/botirjonshokirov.jpeg";
 import AVTR2 from "../../assets/avatar2.jpg";
 import AVTR3 from "../../assets/avatar3.jpg";
 import AVTR4 from "../../assets/avatar4.jpg";
@@ -19,9 +19,9 @@ import "swiper/css/pagination";
 const data = [
   {
     avatar: AVTR1,
-    name: "Tina Snow",
+    name: "Botirjon Shokirov",
     review:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi repudiandae earum molestiae numquam magni. Modi eaque eveniet impedit reprehenderit pariatur eum accusamus mollitia veniam inventore, voluptate distinctio delectus. Labore, quas!",
+      "It was amazing working with you, Botirjon. I really appreciate your creativity and dedication.  Without your help i couldn't accomplish this work properly.  I really want to work with you again. Thanks",
   },
   {
     avatar: AVTR2,
