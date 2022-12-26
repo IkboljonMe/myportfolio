@@ -41,7 +41,8 @@ const Services = () => {
       }
       return letter;
     });
-    return { newData: newSplitted };
+    const generatedId = Math.random() * 1000;
+    return { newData: newSplitted, index: generatedId };
   });
   const newSplittedArray2 = defaultWEBOverviewData.map(({ data }) => {
     const eachSplitted2 = data.split("");
@@ -51,7 +52,9 @@ const Services = () => {
       }
       return letter;
     });
-    return { newData: newSplitted2 };
+    const generatedId2 = Math.random() * 1000;
+
+    return { newData: newSplitted2, index: generatedId2 };
   });
 
   return (
@@ -66,8 +69,11 @@ const Services = () => {
           </div>
 
           <ul className="service__list">
-            {newSplittedArray.map(({ newData }) => (
-              <li>
+            {newSplittedArray.map(({ newData, index }) => (
+              <motion.li
+                whileHover={{ scale: 1.015, opacity: 0.7 }}
+                key={index}
+              >
                 <BiCheck className="service__list-icon" />
                 <p style={{ display: "flex" }}>
                   <MovingComponent
@@ -82,7 +88,7 @@ const Services = () => {
                     {newData}
                   </MovingComponent>
                 </p>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </motion.article>
@@ -95,8 +101,11 @@ const Services = () => {
           </div>
 
           <ul className="service__list">
-            {newSplittedArray2.map(({ newData }) => (
-              <li>
+            {newSplittedArray2.map(({ newData, index }) => (
+              <motion.li
+                whileHover={{ scale: 1.015, opacity: 0.7 }}
+                key={index}
+              >
                 <BiCheck className="service__list-icon" />
                 <p style={{ display: "flex" }}>
                   <MovingComponent
@@ -111,7 +120,7 @@ const Services = () => {
                     {newData}
                   </MovingComponent>
                 </p>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </motion.article>

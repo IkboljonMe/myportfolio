@@ -1,0 +1,103 @@
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  padding: 100px 20px 20px 20px !important;
+  background-color: #1f1f38;
+  width: 100%;
+}
+.formModal {
+  gap: 3rem;
+}
+.profileImgDivWrapper label {
+  font-size: 10px;
+}
+.reviewBtn {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.reviewBtn {
+  height: 50px !important;
+}
+.closeBtn {
+  display: none;
+}
+.closeBtnMobile {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .modal-content {
+    height: 100%;
+  }
+  .closeBtnMobile {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+  }
+  .closeBtnMobile span svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .modal-content {
+    padding-top: 50px !important;
+    width: 50%;
+    margin: 6% auto;
+    border-radius: 10px;
+  }
+  .formModal {
+    gap: 2.5rem;
+  }
+  .closeBtn {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .closeBtn span {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .closeBtn span svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .modal-content {
+    padding-top: 50px !important;
+    width: 50%;
+    margin: 3% auto;
+    border-radius: 10px;
+  }
+  .closeBtn {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .closeBtn span {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .closeBtn span svg {
+    width: 50px;
+    height: 50px;
+  }
+}
