@@ -129,7 +129,6 @@ const About = () => {
               <MdWork className="about__icon" />
               <h5>Job</h5>
               <small>
-                Working at&nbsp;
                 <a
                   href="http://radcode.co"
                   target="_blank"
