@@ -7,27 +7,27 @@ import MovingComponent from "react-moving-text";
 const Services = () => {
   const defaultUIOverviewData = [
     {
-      data: "Working with animationss",
+      data: "Advanced animations",
     },
     {
-      data: "Working with advanced CSS/SASS",
+      data: "Superpower CSS / SASS",
     },
     {
-      data: "Working with MUI/Tailwind",
+      data: "MUI / Boostrap frameworks",
     },
     {
-      data: "Working with advanced styling",
+      data: "Powerfull styling",
     },
   ];
   const defaultWEBOverviewData = [
     {
-      data: "Creating powerful Websites",
+      data: "Advanced Websites",
     },
     {
-      data: "Team Work (remote)",
+      data: "Teamwork ( remote )",
     },
     {
-      data: "React/Nextjs/Typescript",
+      data: "React / Nextjs / Typescript",
     },
     {
       data: "Git / Github / Gitlab",

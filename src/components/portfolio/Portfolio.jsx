@@ -94,7 +94,7 @@ const Portfolio = () => {
                     iteration="infinite"
                     fillMode="none"
                   >
-                    Code
+                    View Code
                   </MovingComponent>
                 </motion.a>
                 <motion.a
