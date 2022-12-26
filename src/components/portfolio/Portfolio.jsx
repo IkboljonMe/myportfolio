@@ -1,5 +1,6 @@
 import React from "react";
 import "./Portfolio.css";
+import { motion } from "framer-motion";
 import IMG1 from "../../assets/blog-site.png";
 import IMG2 from "../../assets/PortfolioImg.png";
 import IMG3 from "../../assets/uzShop.png";
@@ -46,30 +47,36 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         {data.map(({ id, image, title, github, demo }) => {
           return (
-            <article key={id} className="portfolio__item">
+            <motion.article
+              whileHover={{ scale: 1.05 }}
+              key={id}
+              className="portfolio__item"
+            >
               <div className="portfolio__item-image">
                 <img src={image} alt={title} />
               </div>
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
-                <a
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
                   href={github}
                   className="btn"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Github
-                </a>
-                <a
+                </motion.a>
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
                   href={demo}
                   className="btn btn-primary"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Live Demo
-                </a>
+                </motion.a>
               </div>
-            </article>
+            </motion.article>
           );
         })}
       </div>
