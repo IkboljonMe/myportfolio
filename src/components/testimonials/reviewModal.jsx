@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
 
-const ReviewModal = ({ onCloseModal }) => {
+const ReviewModal = ({ onCloseModal, onSubmitProp, refProp }) => {
   return (
     <div id="myModal" class="modal">
       <div className="closeBtn">
@@ -19,7 +19,7 @@ const ReviewModal = ({ onCloseModal }) => {
       </div>
 
       <div class="modal-content">
-        <form className="formModal">
+        <form ref={refProp} onSubmit={onSubmitProp} className="formModal">
           <input
             type="text"
             name="name"

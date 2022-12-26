@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./Testimonials.css";
 import { motion } from "framer-motion";
 
@@ -7,7 +7,7 @@ import AVTR2 from "../../assets/avatar2.jpg";
 import AVTR3 from "../../assets/avatar3.jpg";
 import AVTR4 from "../../assets/avatar4.jpg";
 import ReviewModal from "./reviewModal";
-
+import emailjs from "emailjs-com";
 // import Swiper core and required modules
 import { Navigation, Pagination } from "swiper";
 
@@ -46,6 +46,27 @@ const data = [
 ];
 
 const Testimonials = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_h76c9ko",
+        "template_7o78lci",
+        form.current,
+        "Y4cwkbCzUkl-vOlWP"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
@@ -104,7 +125,13 @@ const Testimonials = () => {
           </motion.button>
         </div>
       </section>
-      {isModalOpen && <ReviewModal onCloseModal={closeModal} />}
+      {isModalOpen && (
+        <ReviewModal
+          refProp={form}
+          onSubmitProp={sendEmail}
+          onCloseModal={closeModal}
+        />
+      )}
     </>
   );
 };
