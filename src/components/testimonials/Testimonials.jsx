@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "./Testimonials.css";
 import { motion } from "framer-motion";
 
@@ -6,7 +6,8 @@ import AVTR1 from "../../assets/botirjonshokirov.jpeg";
 import AVTR2 from "../../assets/avatar2.jpg";
 import AVTR3 from "../../assets/avatar3.jpg";
 import AVTR4 from "../../assets/avatar4.jpg";
-
+import ReviewModal from "./reviewModal";
+import emailjs from "emailjs-com";
 // import Swiper core and required modules
 import { Navigation, Pagination } from "swiper";
 
@@ -45,42 +46,93 @@ const data = [
 ];
 
 const Testimonials = () => {
-  return (
-    <section id="testimonials">
-      <h5>Review from clients</h5>
-      <h2>Testimonials</h2>
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-      <Swiper
-        className="container testimonials__container"
-        // install Swiper modules
-        modules={[Navigation, Pagination]}
-        spaceBetween={40}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-      >
-        {data.map(({ avatar, name, review }, index) => {
-          return (
-            <SwiperSlide key={index} className="testimonial">
-              <motion.div
-                whileHover={{ scale: 1.2 }}
-                className="client__avatar"
-              >
-                <img src={avatar} alt="" />
-              </motion.div>
-              <motion.h5 whileHover={{ scale: 1.2 }} className="client__name">
-                {name}
-              </motion.h5>
-              <motion.small
-                whileHover={{ scale: 1.1 }}
-                className="client__review"
-              >
-                {review}
-              </motion.small>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-    </section>
+    emailjs
+      .sendForm(
+        "service_h76c9ko",
+        "template_7o78lci",
+        form.current,
+        "Y4cwkbCzUkl-vOlWP"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+  return (
+    <>
+      <section id="testimonials">
+        <h5>Review from clients</h5>
+        <h2>Testimonials</h2>
+
+        <Swiper
+          className="container testimonials__container"
+          // install Swiper modules
+          modules={[Navigation, Pagination]}
+          spaceBetween={40}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+        >
+          {data.map(({ avatar, name, review }, index) => {
+            return (
+              <SwiperSlide key={index} className="testimonial">
+                <motion.div
+                  whileHover={{ scale: 1.2 }}
+                  className="client__avatar"
+                >
+                  <img src={avatar} alt="" />
+                </motion.div>
+                <motion.h5 whileHover={{ scale: 1.2 }} className="client__name">
+                  {name}
+                </motion.h5>
+                <motion.small
+                  whileHover={{ scale: 1.1 }}
+                  className="client__review"
+                >
+                  {review}
+                </motion.small>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <motion.button
+            onClick={openModal}
+            whileHover={{ scale: 1.1 }}
+            className="btn btn-primary"
+          >
+            Levea a review
+          </motion.button>
+        </div>
+      </section>
+      {isModalOpen && (
+        <ReviewModal
+          refProp={form}
+          onSubmitProp={sendEmail}
+          onCloseModal={closeModal}
+        />
+      )}
+    </>
   );
 };
 

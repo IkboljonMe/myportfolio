@@ -67,7 +67,7 @@ const Portfolio = () => {
               <h3>
                 <MovingComponent
                   type="pulse"
-                  duration="1000ms"
+                  duration="8000ms"
                   delay="0s"
                   direction="alternate"
                   timing="ease"
@@ -78,44 +78,64 @@ const Portfolio = () => {
                 </MovingComponent>
               </h3>
               <div className="portfolio__item-cta">
-                <motion.a
-                  whileHover={{ scale: 1.1 }}
-                  href={github}
-                  className="btn"
-                  target="_blank"
-                  rel="noreferrer"
+                <MovingComponent
+                  type="shakeMix"
+                  duration="20000ms"
+                  delay="0s"
+                  direction="alternate"
+                  timing="ease"
+                  iteration="infinite"
+                  fillMode="none"
                 >
-                  <MovingComponent
-                    type="shakeMix"
-                    duration="2000ms"
-                    delay="0s"
-                    direction="alternate"
-                    timing="ease"
-                    iteration="infinite"
-                    fillMode="none"
+                  <motion.a
+                    whileHover={{ scale: 1.1 }}
+                    href={github}
+                    className="btn"
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    View Code
-                  </MovingComponent>
-                </motion.a>
-                <motion.a
-                  whileHover={{ scale: 1.1 }}
-                  href={demo}
-                  className="btn btn-primary"
-                  target="_blank"
-                  rel="noreferrer"
+                    <MovingComponent
+                      type="shakeMix"
+                      duration="20000ms"
+                      delay="0s"
+                      direction="reverse"
+                      timing="ease"
+                      iteration="infinite"
+                      fillMode="none"
+                    >
+                      View Code{" "}
+                    </MovingComponent>
+                  </motion.a>
+                </MovingComponent>
+                <MovingComponent
+                  type="shakeMix"
+                  duration="20000ms"
+                  delay="2s"
+                  direction="alternate"
+                  timing="ease"
+                  iteration="infinite"
+                  fillMode="none"
                 >
-                  <MovingComponent
-                    type="shakeMix"
-                    duration="2000ms"
-                    delay="0s"
-                    direction="alternate"
-                    timing="ease"
-                    iteration="infinite"
-                    fillMode="none"
+                  <motion.a
+                    whileHover={{ scale: 1.1 }}
+                    href={demo}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    Live Demo
-                  </MovingComponent>
-                </motion.a>
+                    <MovingComponent
+                      type="shakeMix"
+                      duration="20000ms"
+                      delay="2s"
+                      direction="reverse"
+                      timing="ease"
+                      iteration="infinite"
+                      fillMode="none"
+                    >
+                      Live Demo
+                    </MovingComponent>
+                  </motion.a>
+                </MovingComponent>
               </div>
             </motion.article>
           );

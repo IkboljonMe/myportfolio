@@ -5,6 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
 import { IoLogoTwitter } from "react-icons/io";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
@@ -38,18 +39,30 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://www.facebook.com/ikboljonme">
+        <motion.a
+          whileHover={{ scale: 1.2 }}
+          href="https://www.facebook.com/ikboljonme"
+        >
           <FaFacebookF />
-        </a>
-        <a href="https://www.instagram.com/___.coder.___">
+        </motion.a>
+        <motion.a
+          whileHover={{ scale: 1.2 }}
+          href="https://www.instagram.com/___.coder.___"
+        >
           <FiInstagram />
-        </a>
-        <a href="https://github.com/IkboljonMe">
+        </motion.a>
+        <motion.a
+          whileHover={{ scale: 1.2 }}
+          href="https://github.com/IkboljonMe"
+        >
           <FiGithub />
-        </a>
-        <a href="https://twitter.com/ikboljonme">
+        </motion.a>
+        <motion.a
+          whileHover={{ scale: 1.2 }}
+          href="https://twitter.com/ikboljonme"
+        >
           <IoLogoTwitter />
-        </a>
+        </motion.a>
       </div>
 
       <div className="footer__copyright">
