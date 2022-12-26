@@ -18,6 +18,11 @@
   flex-direction: column;
   gap: 1.2rem;
 }
+.sendMessageButton {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
 
 .contact__option:hover {
   background: transparent;

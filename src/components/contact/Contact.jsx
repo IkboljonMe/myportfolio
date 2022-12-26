@@ -65,7 +65,7 @@ const Contact = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             type="submit"
-            className="btn btn-primary"
+            className="btn btn-primary sendMessageButton"
           >
             Send Message
           </motion.button>
