@@ -1,6 +1,8 @@
 import React from "react";
 import "./Portfolio.css";
 import { motion } from "framer-motion";
+import MovingComponent from "react-moving-text";
+
 import IMG1 from "../../assets/blog-site.png";
 import IMG2 from "../../assets/PortfolioImg.png";
 import IMG3 from "../../assets/uzShop.png";
@@ -25,7 +27,7 @@ const data = [
   {
     id: 3,
     image: IMG3,
-    title: "UzShop E-commerce shop with React. Fully responive ",
+    title: "UzShop E-commerce shop with React. Fully responsive ",
     github: "https://github.com/IkboljonMe/commerce-project-web",
     demo: "https://commerce-project-web.vercel.app/",
   },
@@ -62,7 +64,19 @@ const Portfolio = () => {
                   <img src={image} alt={title} />
                 </motion.a>
               </div>
-              <h3>{title}</h3>
+              <h3>
+                <MovingComponent
+                  type="pulse"
+                  duration="1000ms"
+                  delay="0s"
+                  direction="alternate"
+                  timing="ease"
+                  iteration="infinite"
+                  fillMode="none"
+                >
+                  {title}
+                </MovingComponent>
+              </h3>
               <div className="portfolio__item-cta">
                 <motion.a
                   whileHover={{ scale: 1.1 }}
@@ -71,7 +85,17 @@ const Portfolio = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Github
+                  <MovingComponent
+                    type="shakeMix"
+                    duration="2000ms"
+                    delay="0s"
+                    direction="alternate"
+                    timing="ease"
+                    iteration="infinite"
+                    fillMode="none"
+                  >
+                    Code
+                  </MovingComponent>
                 </motion.a>
                 <motion.a
                   whileHover={{ scale: 1.1 }}
@@ -80,7 +104,17 @@ const Portfolio = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Live Demo
+                  <MovingComponent
+                    type="shakeMix"
+                    duration="2000ms"
+                    delay="0s"
+                    direction="alternate"
+                    timing="ease"
+                    iteration="infinite"
+                    fillMode="none"
+                  >
+                    Live Demo
+                  </MovingComponent>
                 </motion.a>
               </div>
             </motion.article>

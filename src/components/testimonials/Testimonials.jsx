@@ -1,5 +1,6 @@
 import React from "react";
 import "./Testimonials.css";
+import { motion } from "framer-motion";
 
 import AVTR1 from "../../assets/botirjonshokirov.jpeg";
 import AVTR2 from "../../assets/avatar2.jpg";
@@ -60,11 +61,21 @@ const Testimonials = () => {
         {data.map(({ avatar, name, review }, index) => {
           return (
             <SwiperSlide key={index} className="testimonial">
-              <div className="client__avatar">
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                className="client__avatar"
+              >
                 <img src={avatar} alt="" />
-              </div>
-              <h5 className="client__name">{name}</h5>
-              <small className="client__review">{review}</small>
+              </motion.div>
+              <motion.h5 whileHover={{ scale: 1.2 }} className="client__name">
+                {name}
+              </motion.h5>
+              <motion.small
+                whileHover={{ scale: 1.1 }}
+                className="client__review"
+              >
+                {review}
+              </motion.small>
             </SwiperSlide>
           );
         })}
