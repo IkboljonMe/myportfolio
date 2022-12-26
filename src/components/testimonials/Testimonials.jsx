@@ -119,9 +119,9 @@ const Testimonials = () => {
           <motion.button
             onClick={openModal}
             whileHover={{ scale: 1.1 }}
-            className="btn btn-primary"
+            className="btn btn-primary reviewTestModal"
           >
-            Levea a review
+            Leave a review
           </motion.button>
         </div>
       </section>

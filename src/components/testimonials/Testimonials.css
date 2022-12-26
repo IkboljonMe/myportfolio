@@ -27,6 +27,9 @@
   width: 80%;
   margin: 0.8rem auto 0;
 }
+.reviewTestModal {
+  margin-top: 10px;
+}
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
   background: var(--color-primary);
