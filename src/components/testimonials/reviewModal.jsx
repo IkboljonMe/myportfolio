@@ -34,7 +34,7 @@ const ReviewModal = ({ onCloseModal }) => {
             required
           ></textarea>
           <div className="profileImgDivWrapper">
-            <label htmlFor="">Upload photo</label>
+            <label htmlFor="">Upload a photo ( profile photo )</label>
             <input type="file" required />
           </div>
           <div

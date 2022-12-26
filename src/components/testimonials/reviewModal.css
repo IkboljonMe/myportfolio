@@ -10,7 +10,6 @@
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
 }
-
 .modal-content {
   padding: 100px 20px 20px 20px !important;
   background-color: #1f1f38;
@@ -21,7 +20,19 @@
 }
 .profileImgDivWrapper label {
   font-size: 10px;
+  margin-left: 5px;
+  color: #626267;
 }
+.profileImgDivWrapper input::-webkit-file-upload-button {
+  border: none;
+  padding: 10px 15px 10px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
 .reviewBtn {
   width: 100%;
   margin-bottom: 20px;
