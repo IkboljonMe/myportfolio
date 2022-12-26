@@ -16,7 +16,7 @@
   width: 100%;
 }
 .formModal {
-  gap: 3rem;
+  gap: 1.5rem;
 }
 .formModal .topReviewMessage {
   display: flex;
