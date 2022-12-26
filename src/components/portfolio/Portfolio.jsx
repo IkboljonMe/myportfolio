@@ -10,14 +10,14 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Blog site with HTML,CSS and Js",
+    title: "Blog site with HTML,CSS and Js. Awesome website Isn't it?",
     github: "https://github.com/IkboljonMe/blog-site-main",
     demo: "https://blog-site-eight.vercel.app/",
   },
   {
     id: 2,
     image: IMG2,
-    title: "Beatifull portfolio website with React+Nextjs",
+    title: "Beatifull portfolio website with React+Nextjs. Build your own",
     github: "https://github.com/IkboljonMe/portfolio",
     demo: "https://portfolio-coral-two-14.vercel.app/",
   },
@@ -25,14 +25,14 @@ const data = [
   {
     id: 3,
     image: IMG3,
-    title: "Responsive UzShop E-commerce shop with React",
+    title: "UzShop E-commerce shop with React. Fully responive ",
     github: "https://github.com/IkboljonMe/commerce-project-web",
     demo: "https://commerce-project-web.vercel.app/",
   },
   {
     id: 4,
     image: IMG4,
-    title: "Let's play guess game.Guess number between 0 to 20",
+    title: "Let's play Guess my number game. Guess number between 0 to 20",
     github: "https://github.com/IkboljonMe/guess_number_js",
     demo: "https://guess-number-js.vercel.app/",
   },
@@ -53,7 +53,14 @@ const Portfolio = () => {
               className="portfolio__item"
             >
               <div className="portfolio__item-image">
-                <img src={image} alt={title} />
+                <motion.a
+                  whileTap={{ scale: 1.1 }}
+                  href={demo}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={image} alt={title} />
+                </motion.a>
               </div>
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
