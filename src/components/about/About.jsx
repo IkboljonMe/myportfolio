@@ -6,6 +6,8 @@ import { FiUsers } from "react-icons/fi";
 import { IoIosPin } from "react-icons/io";
 import { MdWork } from "react-icons/md";
 import { VscFolderLibrary } from "react-icons/vsc";
+import MovingComponent from "react-moving-text";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -21,32 +23,109 @@ const About = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
+            <motion.article
+              whileHover={{ scale: 1.13 }}
+              className="about__card"
+            >
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>1+ Years Working</small>
-            </article>
-            <article className="about__card">
+              <div className="smallDiv">
+                <small>
+                  <MovingComponent
+                    type="typewriter"
+                    dataText={[
+                      "1+ Years Working",
+                      "ReactJs",
+                      "NextJs",
+                      "Typescript",
+                    ]}
+                  />
+                </small>
+              </div>
+            </motion.article>
+            <motion.article
+              whileHover={{ scale: 1.13 }}
+              className="about__card"
+            >
               <FiUsers className="about__icon" />
               <h5>Clients</h5>
-              <small>WellBee and WorldFires</small>
-            </article>
-            <article className="about__card">
+              <div className="smallDiv">
+                <small>
+                  <MovingComponent
+                    type="typewriter"
+                    dataText={["Wellbee", "FlowForms", "Referrals", "UzCoding"]}
+                  />
+                </small>
+              </div>
+            </motion.article>
+            <motion.article
+              whileHover={{ scale: 1.13 }}
+              className="about__card"
+            >
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>15+ Completed</small>
-            </article>
-            <article className="about__card">
+
+              <div className="smallDiv">
+                <small>
+                  <MovingComponent
+                    type="typewriter"
+                    dataText={[
+                      "UzShop",
+                      "Blog-site",
+                      "15+ Projects",
+                      "Portfolio Website",
+                      "TikTik app",
+                    ]}
+                  />
+                </small>
+              </div>
+            </motion.article>
+            <motion.article
+              whileHover={{ scale: 1.13 }}
+              className="about__card"
+            >
               <FaUniversity className="about__icon" />
               <h5>Studies</h5>
-              <small>Studying at BS degree</small>
-            </article>
-            <article className="about__card">
+              <div className="smallDiv">
+                <small>
+                  <MovingComponent
+                    type="typewriter"
+                    dataText={[
+                      "Schooll N#46",
+                      "4-VIDUMI",
+                      "Presidental scholl",
+                      "UEHS (Warsaw)",
+                      "Wzechnica BS",
+                    ]}
+                  />
+                </small>
+              </div>
+            </motion.article>
+            <motion.article
+              whileHover={{ scale: 1.13 }}
+              className="about__card"
+            >
               <IoIosPin className="about__icon" />
               <h5>Location</h5>
-              <small>Living in Warsaw</small>
-            </article>
-            <article className="about__card">
+              <div className="smallDiv">
+                <small>
+                  <MovingComponent
+                    type="typewriter"
+                    dataText={[
+                      "Poland",
+                      "Warsaw",
+                      "Grojecka",
+                      "Building: 70",
+                      "Apartment: 105",
+                    ]}
+                  />
+                </small>
+              </div>
+            </motion.article>
+            <motion.article
+              whileHover={{ scale: 1.13 }}
+              className="about__card"
+            >
               <MdWork className="about__icon" />
               <h5>Job</h5>
               <small>
@@ -59,7 +138,7 @@ const About = () => {
                   RadCode
                 </a>
               </small>
-            </article>
+            </motion.article>
           </div>
           <p>
             I am Ikboljon Abdurasulov from Uzbekistan. Since 2018, programming
@@ -77,9 +156,13 @@ const About = () => {
             </a>
             .
           </p>
-          <a href="#contact" className="btn btn-primary">
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            href="#contact"
+            className="btn btn-primary"
+          >
             Let's Talk
-          </a>
+          </motion.a>
         </div>
       </div>
     </section>
