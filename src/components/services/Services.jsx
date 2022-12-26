@@ -1,6 +1,7 @@
 import React from "react";
 import "./Services.css";
 import { BiCheck } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
@@ -9,7 +10,7 @@ const Services = () => {
       <h2>Services</h2>
 
       <div className="container services__container">
-        <article className="service">
+        <motion.article whileHover={{ scale: 1.06 }} className="service">
           <div className="service__head">
             <h3>UI/UX Design</h3>
           </div>
@@ -32,11 +33,11 @@ const Services = () => {
               <p>Working with advanced styling </p>
             </li>
           </ul>
-        </article>
+        </motion.article>
 
         {/* END OF UI/UX */}
 
-        <article className="service">
+        <motion.article whileHover={{ scale: 1.06 }} className="service">
           <div className="service__head">
             <h3>Web Development</h3>
           </div>
@@ -59,7 +60,7 @@ const Services = () => {
               <p>Git/Github/Gitlab </p>
             </li>
           </ul>
-        </article>
+        </motion.article>
 
         {/* END OF WEB DEVELOPMENT */}
       </div>
