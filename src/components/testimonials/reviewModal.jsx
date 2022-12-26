@@ -3,6 +3,7 @@ import "./reviewModal.css";
 import { motion } from "framer-motion";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { IoClose } from "react-icons/io5";
+import MovingComponent from "react-moving-text";
 
 const ReviewModal = ({ onCloseModal, onSubmitProp, refProp }) => {
   return (
@@ -20,6 +21,19 @@ const ReviewModal = ({ onCloseModal, onSubmitProp, refProp }) => {
 
       <div class="modal-content">
         <form ref={refProp} onSubmit={onSubmitProp} className="formModal">
+          <label className="topReviewMessage" htmlFor="">
+            <MovingComponent
+              type="bounce"
+              duration="2000ms"
+              delay="0s"
+              direction="normal"
+              timing="ease"
+              iteration="infinite"
+              fillMode="none"
+            >
+              Leave Your Review Below
+            </MovingComponent>
+          </label>
           <input
             type="text"
             name="name"
@@ -48,7 +62,7 @@ const ReviewModal = ({ onCloseModal, onSubmitProp, refProp }) => {
               type="submit"
               className="btn btn-primary reviewBtn"
             >
-              Leave you review
+              Send Review
             </motion.button>
           </div>
         </form>
