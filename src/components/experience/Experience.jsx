@@ -122,12 +122,12 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>MongoDb</h4>
+                <h4>Prisma</h4>
                 <div className="movingTextWrapper">
                   <small className="text-light">
                     <MovingComponent
                       type="typewriter"
-                      dataText={["Basic", "CLI", "Data store"]}
+                      dataText={["Basic", "CLI", "Data store", "Schemas"]}
                     />
                   </small>
                 </div>
@@ -151,12 +151,26 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>MySQL</h4>
+                <h4>PostgreSQL</h4>
                 <div className="movingTextWrapper">
                   <small className="text-light">
                     <MovingComponent
                       type="typewriter"
-                      dataText={["Basic", "Junior"]}
+                      dataText={["Basic", "Junior", "Prisma"]}
+                    />
+                  </small>
+                </div>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon" />
+              <div>
+                <h4>Sanity</h4>
+                <div className="movingTextWrapper">
+                  <small className="text-light">
+                    <MovingComponent
+                      type="typewriter"
+                      dataText={["Studio", "Junior", "CLI"]}
                     />
                   </small>
                 </div>
